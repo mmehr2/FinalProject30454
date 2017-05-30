@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+
+# Go to Kafka dir
+cd /home/ec2-user/kafka*
+
+echo Spinning up Zookeeper server ...
+
+# Run the Zookeeper server
+export KAFKA_HEAP_OPTS="-Xmx128M -Xms64M"
+bin/zookeeper-server-start.sh config/zookeeper.properties > \
+  /tmp/zookeeper.log 2>&1 & 
+
+echo Waiting for Zookeeper done...
+sleep 5
+echo Spinning up Kafka server ...
+
+# And run the Kafka server
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+bin/kafka-server-start.sh config/server.properties > \
+  /tmp/kafka.log 2>&1 &
+
+# Scale back Java memory usage in case other sessions are spawned
+export KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
+
+# Watch the logs
+tail -f /tmp/kafka.log
+

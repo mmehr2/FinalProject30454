@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+# Go to Kafka dir
+cd /home/ec2-user/kafka*
+
+KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic iotmsgs
+

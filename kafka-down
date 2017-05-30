@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+# Go to Kafka dir
+cd /home/ec2-user/kafka*
+
+echo Shutting down servers ...
+bin/kafka-server-stop.sh
+
+sleep 10
+
+bin/zookeeper-server-stop.sh
+
+# Watch the logs
+tail -f /tmp/kafka.log
+
