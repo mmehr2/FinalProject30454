@@ -3,6 +3,6 @@
 # Go to Kafka dir
 cd /home/ec2-user/kafka*
 
-KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
+KAFKA_HEAP_OPTS="-Xmx24M -Xms24M"
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic x42ws.public.data
 

@@ -6,7 +6,7 @@ cd /home/ec2-user/kafka*
 echo Spinning up Zookeeper server ...
 
 # Run the Zookeeper server
-export KAFKA_HEAP_OPTS="-Xmx128M -Xms64M"
+export KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
 bin/zookeeper-server-start.sh config/zookeeper.properties > \
   /tmp/zookeeper.log 2>&1 & 
 
@@ -15,12 +15,12 @@ sleep 5
 echo Spinning up Kafka server ...
 
 # And run the Kafka server
-export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+export KAFKA_HEAP_OPTS="-Xmx172M -Xms172M"
 bin/kafka-server-start.sh config/server.properties > \
   /tmp/kafka.log 2>&1 &
 
 # Scale back Java memory usage in case other sessions are spawned
-export KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
+export KAFKA_HEAP_OPTS="-Xmx24M -Xms24M"
 
 # Watch the logs
 tail -f /tmp/kafka.log
