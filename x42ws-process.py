@@ -166,16 +166,26 @@ if __name__ == "__main__":
             #############
 
             # Separate the sensor value types
-            tempValues = sqlContext.sql("select payload.data.temperature from iotmsgsTable").show(n=100)
-            #pressValues = sqlContext.sql("select payload.data.pressure from iotmsgsTable").show(n=100)
-            #humidValues = sqlContext.sql("select payload.data.humidity from iotmsgsTable").show(n=100)
-            #lightValues = sqlContext.sql("select payload.data.light from iotmsgsTable").show(n=100)
+            tempValues = sqlContext.sql("select payload.data.temperature from iotmsgsTable")
+            tempValues.show(n=100)
+            pressValues = sqlContext.sql("select payload.data.pressure from iotmsgsTable")
+            pressValues.show(n=100)
+            humidValues = sqlContext.sql("select payload.data.humidity from iotmsgsTable")
+            humidValues.show(n=100)
+            lightValues = sqlContext.sql("select payload.data.ambient_light from iotmsgsTable")
+            lightValues.show(n=100)
 
             # Process statistics
             tempValues.foreach(add_temp)
             #pressValues.foreach(add_press)
             #humidValues.foreach(add_humid)
             #lightValues.foreach(add_light)
+
+            # Process triggers
+            # I want to compare the current value with thresholds set up as mean +/- 2 std-dev and if not in between, trigger first
+            # Eventually, if we keep track of this for each device, we can do things like get ensemble stats and notice how many are outside that range too
+            # Some reporting could also include nearest neighbors stats, etc.
+            # But first we gotta set up the stats! Why isn't it working?
 
             # Clean-up
 	    sqlContext.dropTempTable("iotmsgsTable")
