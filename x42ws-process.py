@@ -176,7 +176,17 @@ if __name__ == "__main__":
             lightValues.show(n=100)
 
             # Process statistics
-            tempValues.foreach(add_temp)
+            tempValuesList = tempValues.collect()
+            for x in tempValuesList:
+                for key in x:
+                    print("Key", key)
+                add_temp(x.temperature)
+            tempMean = get_temp_mean()
+            tempStd = get_temp_stddev()
+            print("Temperature - mean=", tempMean, ", std.dev=", tempStd)
+            tempThreshLow = tempMean - tempStd
+            tempThreshHigh = tempMean + tempStd
+            print("Low temp is <", tempThreshLow, "and high temp is >", tempThreshHigh)
             #pressValues.foreach(add_press)
             #humidValues.foreach(add_humid)
             #lightValues.foreach(add_light)
