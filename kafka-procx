@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+# Go to Kafka dir
+cd /home/ec2-user
+
+KAFKA_HEAP_OPTS="-Xmx24M -Xms24M"
+spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.0.0-preview.jar x42ws-process.py localhost:9092 x42ws.public.data $1
+
