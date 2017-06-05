@@ -221,20 +221,17 @@ if __name__ == "__main__":
             #############
 
             # Separate the sensor value types
-            tempValues = sqlContext.sql("select guid, payload.data.temperature as temperature from iotmsgsTable")
-            tempValues.show(n=100)
-            pressValues = sqlContext.sql("select guid, payload.data.pressure as pressure from iotmsgsTable")
-            pressValues.show(n=100)
-            humidValues = sqlContext.sql("select guid, payload.data.humidity as humidity from iotmsgsTable")
-            humidValues.show(n=100)
-            lightValues = sqlContext.sql("select guid, payload.data.ambient_light as ambient_light from iotmsgsTable")
-            lightValues.show(n=100)
+            values = sqlContext.sql("select guid, payload.data.temperature as temperature, payload.data.pressure as pressure, payload.data.humidity as humidity, payload.data.ambient_light as ambient_light from iotmsgsTable")
+            values.show(n=100)
 
             # Process statistics
             #tempValues.foreach(lambda x: add_temp(x.temperature))
-            tempValuesList = tempValues.collect()
-            for x in tempValuesList:
+            valuesList = values.collect()
+            for x in valuesList:
                 add_temp(x.temperature)
+                add_press(x.pressure)
+                add_humid(x.humidity)
+                add_light(x.ambient_light)
             tempMean = get_temp_mean()
             tempStd = get_temp_stddev()
             print("Temperature - mean=", tempMean, ", std.dev=", tempStd)
@@ -242,9 +239,6 @@ if __name__ == "__main__":
             tempThreshHigh = tempMean + tempStd * 2.0
             print("Two-sigma Low temp is <", tempThreshLow, "and high temp is >", tempThreshHigh)
             #pressValues.foreach(lambda x: add_press(x.pressure))
-            pressValuesList = pressValues.collect()
-            for x in pressValuesList:
-                add_press(x.pressure)
             pressMean = get_press_mean()
             pressStd = get_press_stddev()
             print("Barometric Pressure - mean=", pressMean, ", std.dev=", pressStd)
@@ -252,9 +246,6 @@ if __name__ == "__main__":
             pressThreshHigh = pressMean + pressStd * 2.0
             print("Two-sigma Low pressure is <", pressThreshLow, "and high pressure is >", pressThreshHigh)
             #humidValues.foreach(lambda x: add_humid(x.humidity))
-            humidValuesList = humidValues.collect()
-            for x in humidValuesList:
-                add_humid(x.humidity)
             humidMean = get_humid_mean()
             humidStd = get_humid_stddev()
             print("Humidity - mean=", humidMean, ", std.dev=", humidStd)
@@ -262,9 +253,6 @@ if __name__ == "__main__":
             humidThreshHigh = humidMean + humidStd * 2.0
             print("Two-sigma Low humid is <", humidThreshLow, "and high humid is >", humidThreshHigh)
             #lightValues.foreach(lambda x: add_light(x.ambient_light))
-            lightValuesList = lightValues.collect()
-            for x in lightValuesList:
-                add_light(x.ambient_light)
             lightMean = get_light_mean()
             lightStd = get_light_stddev()
             print("Ambient Light Level - mean=", lightMean, ", std.dev=", lightStd)
@@ -276,14 +264,11 @@ if __name__ == "__main__":
             # I want to compare the current value with thresholds set up as mean +/- 2 std-dev and if not in between, trigger first
             # Eventually, if we keep track of this for each device, we can do things like get ensemble stats and notice how many are outside that range too
             # Some reporting could also include nearest neighbors stats, etc.
-            for x in tempValuesList:
+            for x in valuesList:
                 #print("Device", x.guid, ", temperature", x.temperature)
                 showerr(x.guid, "TEMPERATURE", x.temperature, tempThreshLow, tempThreshHigh)
-            for x in pressValuesList:
                 showerr(x.guid, "PRESSURE", x.pressure, pressThreshLow, pressThreshHigh)
-            for x in humidValuesList:
                 showerr(x.guid, "HUMIDITY", x.humidity, humidThreshLow, humidThreshHigh)
-            for x in lightValuesList:
                 showerr(x.guid, "LIGHT LEVEL", x.ambient_light, lightThreshLow, lightThreshHigh)
             
             # Clean-up
