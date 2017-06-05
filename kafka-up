@@ -6,7 +6,7 @@ cd /home/ec2-user/kafka*
 echo Spinning up Zookeeper server ...
 
 # Run the Zookeeper server
-export KAFKA_HEAP_OPTS="-Xmx64M -Xms48M"
+export KAFKA_HEAP_OPTS="-Xmx48M -Xms48M"
 bin/zookeeper-server-start.sh config/zookeeper.properties > \
   /tmp/zookeeper.log 2>&1 & 
 
