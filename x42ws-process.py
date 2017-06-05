@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
     def get_temp_variance():
         global tempN, tempEx, tempEx2
-        if (tempN > 2):
+        if (tempN < 2):
             return 0.0
         return (tempEx2 - (tempEx*tempEx)/tempN) / (tempN-1)
 
@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
     def get_press_variance():
         global pressN, pressEx, pressEx2
-        if (pressN > 2):
+        if (pressN < 2):
             return 0.0
         return (pressEx2 - (pressEx*pressEx)/pressN) / (pressN-1)
 
@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
     def get_humid_variance():
         global humidN, humidEx, humidEx2
-        if (humidN > 2):
+        if (humidN < 2):
             return 0.0
         return (humidEx2 - (humidEx*humidEx)/humidN) / (humidN-1)
 
@@ -174,7 +174,7 @@ if __name__ == "__main__":
 
     def get_light_variance():
         global lightN, lightEx, lightEx2
-        if (lightN > 2):
+        if (lightN < 2):
             return 0.0
         return (lightEx2 - (lightEx*lightEx)/lightN) / (lightN-1)
 
@@ -277,7 +277,7 @@ if __name__ == "__main__":
             # Eventually, if we keep track of this for each device, we can do things like get ensemble stats and notice how many are outside that range too
             # Some reporting could also include nearest neighbors stats, etc.
             for x in tempValuesList:
-                print("Device", x.guid, ", temperature", x.temperature)
+                #print("Device", x.guid, ", temperature", x.temperature)
                 showerr(x.guid, "TEMPERATURE", x.temperature, tempThreshLow, tempThreshHigh)
             for x in pressValuesList:
                 showerr(x.guid, "PRESSURE", x.pressure, pressThreshLow, pressThreshHigh)
