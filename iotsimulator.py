@@ -9,26 +9,12 @@
   "payload": {
      "format": "urn:com:azuresults:x42ws:sensors", 
      "data": {
-      "sensors": [
-        {
-          "current": 84.78471292920412,
-          "senstype": "temperature"
-        },
-        {
-          "current": 29.92822270951278,
-          "senstype": "pressure"
-        },
-        {
-          "current": 37.6861151899289,
-          "senstype": "humidity"
-        },
-        {
-          "current": 96,
-          "senstype": "ambient_light"
-        }
-      ],
-      "timestamp": "2017-05-20T20:42:27Z"
-    }
+        "temperature": 103.013042,
+        "pressure": 28.761394,
+        "humidity": 55.699007,
+        "ambient_light": 195.074042,
+        "timestamp": "2017-06-05T17:09:52.184000Z"
+     }
    }
 }
 ]
@@ -180,7 +166,20 @@ def get_model_sample(datetime_obj):
   randLight = random.uniform(-10, 10) + mean_daylight # actual range 0-255
   return (randTemp, randPress, randHumid, randLight)
 
-def gen_samples(numMsgs):
+def rebias_sample(data, biasType, bias):
+  '''Will add a value to one of the data items in the sample, to create a step-function change. '''
+  T, P, H, L, ts = data
+  if biasType == 'T':
+    T += bias
+  if biasType == 'P':
+    P += bias
+  if biasType == 'H':
+    H += bias
+  if biasType == 'L':
+    L += bias
+  return (T, P, H, L, ts)
+
+def gen_samples(numMsgs, biasType, bias):
   print "["
 
   dataElementDelimiter = ","
@@ -205,11 +204,14 @@ def gen_samples(numMsgs):
     # For now, just generate the random distribution around a central "fake" mean.
     # This will be replaced by the actual submitted value eventually.
     sampleTime = datetime.datetime.utcnow()
-    (randTemp, randPress, randHumid, randLight) = get_model_sample(today)
+    #(randTemp, randPress, randHumid, randLight) = get_model_sample(today)
+    X = get_model_sample(today)
     ts = sampleTime.isoformat()
+    X = X + (ts,)
+    X = rebias_sample(X, biasType, bias)
     if counter == (numMsgs - 1):
       dataElementDelimiter = ""
-    print (iotmsg_data2 % (randTemp, randPress, randHumid, randLight, ts)) + dataElementDelimiter
+    print (iotmsg_data2 % X) + dataElementDelimiter
 
   print "]"
 
@@ -234,17 +236,12 @@ def test_daily_model():
 
 if __name__=="__main__":
   # Set number of simulated messages to generate
-  if len(sys.argv) > 1:
-    numMsgs = int(sys.argv[1])
-  else:
-    numMsgs = 10 # use 1, 100, or 10,000
-  # Set number of simulated devices to generate
-  useDeviceMode = False
-  if len(sys.argv) > 2:
-    numDvcs = int(sys.argv[2])
-    useDeviceMode = True
-  else:
-    numDvcs = 260 # < 260 for now (random letter * random digit)
-  gen_samples(numMsgs)                             
+  argc = len(sys.argv)
+  numMsgs = int(sys.argv[1]) if argc>1 else 1
+  # Set bias for a data type
+  biasType = sys.argv[2] if argc>2 else ''
+  bias = float(sys.argv[3]) if argc>3 else 0.0
+  #generate samples
+  gen_samples(numMsgs, biasType, bias)                             
   #test_seasonal_model()
   #test_daily_model()
