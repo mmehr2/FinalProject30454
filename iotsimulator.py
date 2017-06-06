@@ -44,7 +44,7 @@ iotmsg_eventTime = """\
 
 iotmsg_payload ="""\
   "payload": {
-     "reply-to": "",
+     "reply_to": "",
      "format": "%s", """
 
 iotmsg_data ="""\

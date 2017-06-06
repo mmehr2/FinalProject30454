@@ -344,7 +344,7 @@ if __name__ == "__main__":
             #############
 
             # Separate the sensor value types
-            values = sqlContext.sql("select guid, payload.data.temperature as temperature, payload.data.pressure as pressure, payload.data.humidity as humidity, payload.data.ambient_light as ambient_light from iotmsgsTable")
+            values = sqlContext.sql("select guid, payload.reply_to as reply_url, payload.data.temperature as temperature, payload.data.pressure as pressure, payload.data.humidity as humidity, payload.data.ambient_light as ambient_light from iotmsgsTable")
             values.show(n=100)
 
             # Process statistics
