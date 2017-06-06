@@ -44,6 +44,7 @@ from pyspark.streaming.kafka import KafkaUtils
 from pyspark.streaming.kafka import OffsetRange
 from operator import add
 from pympler import tracker
+import requests
 
 if __name__ == "__main__":
   try:
@@ -79,6 +80,7 @@ if __name__ == "__main__":
     lightK = 0.0
     lightN = 0
     mTracker = None
+    alarm = {"TEMPERATURE": 0, "PRESSURE": 0, "HUMIDITY": 0, "LIGHT": 0} # States: 0=off, 1=on, 2=chg to off, 3=chg to on
 
     print("Restoring statistics here, if any ...")
 
@@ -181,15 +183,71 @@ if __name__ == "__main__":
     def get_light_stddev():
         return math.sqrt(get_light_variance())
 
+    def procstats(x):
+            add_temp(x.temperature)
+            add_press(x.pressure)
+            add_humid(x.humidity)
+            add_light(x.ambient_light)
+
     def showerr(guid, typestr, val, thrL, thrH):
+        global alarm
+        old_alarm = alarm[typestr]
         if val > thrH:
             print("****************************************")
             print("**** DEVICE", guid, typestr, val, "is over upper threshold", thrH)
             print("****************************************")
+            new_alarm = True
         elif val < thrL:
             print("****************************************")
             print("**** DEVICE", guid, typestr, val, "is under lower threshold", thrL)
             print("****************************************")
+            new_alarm = True
+        else:
+            new_alarm = False
+            if old_alarm == 2:
+                print("****************************************")
+                print("**** DEVICE", guid, typestr, val, "is back in range.")
+                print("****************************************")
+        if new_alarm:
+            if old_alarm == 0:
+                alarm[typestr] = 3 #setting ON
+                trigger_alarm(typestr)
+            elif old_alarm == 1:
+                pass # staying ON
+            elif old_alarm == 2:
+                pass #changed mind??
+            elif old_alarm == 3:
+                trigger_alarm(typestr) # still trying to set ON
+        else:
+            if old_alarm == 0:
+                pass # staying OFF
+            elif old_alarm == 1:
+                alarm[typestr] = 2 #setting OFF
+                trigger_alarm(typestr)
+            elif old_alarm == 2:
+                trigger_alarm(typestr) # still trying to set OFF
+            elif old_alarm == 3:
+                pass # changed mind??
+
+    def trigger_alarm(typestr):
+        global alarm
+        state = alarm[typestr]
+        if state < 2:
+            return
+        url = "https://893639c5.ngrok.io/weather/api/led/0/" #  From email: REST API Server:    https://893639c5.ngrok.io/weather/api
+        if state == 2:
+            code = "0"
+            setting = 0
+        else: # should be 3
+            code = "1"
+            setting = 1
+        url += code
+        r = requests.post(url)
+        if r.status_code == 200:
+            print("Successfully set the alarm on reference device to %s." % code)
+            alarm[typestr] = setting
+        else:
+            print("Unable to set alarm on reference device to %s due to error." % code)
 
     # Define function to process RDDs of the json DStream to convert them
     #   to DataFrame and run SQL queries
@@ -228,10 +286,7 @@ if __name__ == "__main__":
             #tempValues.foreach(lambda x: add_temp(x.temperature))
             valuesList = values.collect()
             for x in valuesList:
-                add_temp(x.temperature)
-                add_press(x.pressure)
-                add_humid(x.humidity)
-                add_light(x.ambient_light)
+                procstats(x)
             tempMean = get_temp_mean()
             tempStd = get_temp_stddev()
             print("Temperature - mean=", tempMean, ", std.dev=", tempStd)
@@ -269,7 +324,7 @@ if __name__ == "__main__":
                 showerr(x.guid, "TEMPERATURE", x.temperature, tempThreshLow, tempThreshHigh)
                 showerr(x.guid, "PRESSURE", x.pressure, pressThreshLow, pressThreshHigh)
                 showerr(x.guid, "HUMIDITY", x.humidity, humidThreshLow, humidThreshHigh)
-                showerr(x.guid, "LIGHT LEVEL", x.ambient_light, lightThreshLow, lightThreshHigh)
+                showerr(x.guid, "LIGHT", x.ambient_light, lightThreshLow, lightThreshHigh)
             
             # Clean-up
 	    sqlContext.dropTempTable("iotmsgsTable")
