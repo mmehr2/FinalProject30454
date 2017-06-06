@@ -1,0 +1,1902 @@
+[
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711627Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.135014,
+        "pressure": 28.928284,
+        "humidity": 15.834402,
+        "ambient_light": 93.541293,
+        "timestamp": "2017-06-06T23:19:05.711653Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711709Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.821903,
+        "pressure": 30.109665,
+        "humidity": 71.270314,
+        "ambient_light": 77.001088,
+        "timestamp": "2017-06-06T23:19:05.711721Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711745Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.169776,
+        "pressure": 27.928142,
+        "humidity": 11.634268,
+        "ambient_light": 90.985465,
+        "timestamp": "2017-06-06T23:19:05.711753Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711773Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 106.797404,
+        "pressure": 28.046149,
+        "humidity": 74.780705,
+        "ambient_light": 81.368683,
+        "timestamp": "2017-06-06T23:19:05.711780Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711799Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 93.919618,
+        "pressure": 28.740017,
+        "humidity": 20.903188,
+        "ambient_light": 90.847824,
+        "timestamp": "2017-06-06T23:19:05.711806Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711824Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 95.917924,
+        "pressure": 29.963025,
+        "humidity": 28.637557,
+        "ambient_light": 83.099283,
+        "timestamp": "2017-06-06T23:19:05.711830Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711847Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 103.984290,
+        "pressure": 28.950878,
+        "humidity": 31.842554,
+        "ambient_light": 81.775406,
+        "timestamp": "2017-06-06T23:19:05.711853Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711869Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.441632,
+        "pressure": 29.836780,
+        "humidity": 69.890150,
+        "ambient_light": 84.391569,
+        "timestamp": "2017-06-06T23:19:05.711876Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711915Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.170570,
+        "pressure": 29.834568,
+        "humidity": 60.473421,
+        "ambient_light": 86.673618,
+        "timestamp": "2017-06-06T23:19:05.711924Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711944Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.379712,
+        "pressure": 30.194313,
+        "humidity": 35.110599,
+        "ambient_light": 96.170977,
+        "timestamp": "2017-06-06T23:19:05.711951Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711968Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 103.373916,
+        "pressure": 30.027137,
+        "humidity": 36.329071,
+        "ambient_light": 95.924884,
+        "timestamp": "2017-06-06T23:19:05.711975Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.711990Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 95.789447,
+        "pressure": 30.140623,
+        "humidity": 41.142477,
+        "ambient_light": 90.787144,
+        "timestamp": "2017-06-06T23:19:05.711996Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712012Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.560362,
+        "pressure": 28.567536,
+        "humidity": 17.970631,
+        "ambient_light": 78.455735,
+        "timestamp": "2017-06-06T23:19:05.712018Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712035Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.373208,
+        "pressure": 27.919673,
+        "humidity": 10.027243,
+        "ambient_light": 89.932290,
+        "timestamp": "2017-06-06T23:19:05.712042Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712057Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.835844,
+        "pressure": 28.034622,
+        "humidity": 77.220777,
+        "ambient_light": 90.236313,
+        "timestamp": "2017-06-06T23:19:05.712064Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712079Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.353799,
+        "pressure": 30.113733,
+        "humidity": 57.584520,
+        "ambient_light": 80.960530,
+        "timestamp": "2017-06-06T23:19:05.712085Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712107Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.936458,
+        "pressure": 29.006014,
+        "humidity": 56.253685,
+        "ambient_light": 95.887903,
+        "timestamp": "2017-06-06T23:19:05.712115Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712132Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.211746,
+        "pressure": 29.272014,
+        "humidity": 42.790908,
+        "ambient_light": 88.918644,
+        "timestamp": "2017-06-06T23:19:05.712138Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712154Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.980691,
+        "pressure": 29.934195,
+        "humidity": 29.055041,
+        "ambient_light": 85.011318,
+        "timestamp": "2017-06-06T23:19:05.712160Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712176Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 107.428703,
+        "pressure": 29.869469,
+        "humidity": 77.486344,
+        "ambient_light": 78.955919,
+        "timestamp": "2017-06-06T23:19:05.712182Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712198Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.541104,
+        "pressure": 29.711246,
+        "humidity": 14.526629,
+        "ambient_light": 79.079646,
+        "timestamp": "2017-06-06T23:19:05.712204Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712219Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.858647,
+        "pressure": 29.767485,
+        "humidity": 11.202513,
+        "ambient_light": 92.967360,
+        "timestamp": "2017-06-06T23:19:05.712226Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712241Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 99.177352,
+        "pressure": 29.971662,
+        "humidity": 29.179556,
+        "ambient_light": 86.862765,
+        "timestamp": "2017-06-06T23:19:05.712252Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712268Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 103.536076,
+        "pressure": 28.577862,
+        "humidity": 25.862977,
+        "ambient_light": 91.811449,
+        "timestamp": "2017-06-06T23:19:05.712275Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712296Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.372681,
+        "pressure": 29.918614,
+        "humidity": 47.260883,
+        "ambient_light": 87.321243,
+        "timestamp": "2017-06-06T23:19:05.712303Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712320Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 106.536703,
+        "pressure": 29.563464,
+        "humidity": 65.575511,
+        "ambient_light": 79.205865,
+        "timestamp": "2017-06-06T23:19:05.712327Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712342Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 104.089490,
+        "pressure": 27.988228,
+        "humidity": 69.980092,
+        "ambient_light": 88.251613,
+        "timestamp": "2017-06-06T23:19:05.712349Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712364Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.393837,
+        "pressure": 28.899966,
+        "humidity": 55.895058,
+        "ambient_light": 83.065971,
+        "timestamp": "2017-06-06T23:19:05.712370Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712385Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.070506,
+        "pressure": 28.147915,
+        "humidity": 46.491998,
+        "ambient_light": 92.782737,
+        "timestamp": "2017-06-06T23:19:05.712391Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712406Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 103.808614,
+        "pressure": 29.517414,
+        "humidity": 13.456323,
+        "ambient_light": 89.977808,
+        "timestamp": "2017-06-06T23:19:05.712413Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712428Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 105.158537,
+        "pressure": 29.930574,
+        "humidity": 36.342513,
+        "ambient_light": 77.902082,
+        "timestamp": "2017-06-06T23:19:05.712434Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712449Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 103.427450,
+        "pressure": 29.128065,
+        "humidity": 54.664572,
+        "ambient_light": 79.307480,
+        "timestamp": "2017-06-06T23:19:05.712455Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712475Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.792826,
+        "pressure": 28.514649,
+        "humidity": 34.426616,
+        "ambient_light": 95.119862,
+        "timestamp": "2017-06-06T23:19:05.712482Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712499Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 99.617652,
+        "pressure": 29.939626,
+        "humidity": 69.353486,
+        "ambient_light": 95.122007,
+        "timestamp": "2017-06-06T23:19:05.712505Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712536Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.665698,
+        "pressure": 29.600724,
+        "humidity": 18.313195,
+        "ambient_light": 77.562175,
+        "timestamp": "2017-06-06T23:19:05.712544Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712561Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 111.192721,
+        "pressure": 28.775069,
+        "humidity": 67.083436,
+        "ambient_light": 92.782121,
+        "timestamp": "2017-06-06T23:19:05.712568Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712583Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.009370,
+        "pressure": 28.559860,
+        "humidity": 70.250242,
+        "ambient_light": 79.236776,
+        "timestamp": "2017-06-06T23:19:05.712589Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712604Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.366074,
+        "pressure": 29.276344,
+        "humidity": 13.982881,
+        "ambient_light": 77.525549,
+        "timestamp": "2017-06-06T23:19:05.712611Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712626Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 111.499544,
+        "pressure": 28.183541,
+        "humidity": 44.893039,
+        "ambient_light": 85.071648,
+        "timestamp": "2017-06-06T23:19:05.712632Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712647Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.425299,
+        "pressure": 29.262898,
+        "humidity": 84.076545,
+        "ambient_light": 82.353812,
+        "timestamp": "2017-06-06T23:19:05.712654Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712689Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 104.365964,
+        "pressure": 28.680380,
+        "humidity": 66.114722,
+        "ambient_light": 85.860293,
+        "timestamp": "2017-06-06T23:19:05.712697Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712714Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.946684,
+        "pressure": 29.846965,
+        "humidity": 20.698884,
+        "ambient_light": 96.537011,
+        "timestamp": "2017-06-06T23:19:05.712720Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712736Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 97.196800,
+        "pressure": 29.559055,
+        "humidity": 26.619889,
+        "ambient_light": 78.033925,
+        "timestamp": "2017-06-06T23:19:05.712742Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712757Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.363005,
+        "pressure": 28.723440,
+        "humidity": 39.822876,
+        "ambient_light": 89.611749,
+        "timestamp": "2017-06-06T23:19:05.712763Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712782Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 97.239388,
+        "pressure": 27.883585,
+        "humidity": 41.512642,
+        "ambient_light": 78.278682,
+        "timestamp": "2017-06-06T23:19:05.712801Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712819Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.143005,
+        "pressure": 29.145666,
+        "humidity": 15.872736,
+        "ambient_light": 90.493091,
+        "timestamp": "2017-06-06T23:19:05.712825Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712842Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 106.234268,
+        "pressure": 28.154805,
+        "humidity": 68.064759,
+        "ambient_light": 86.692930,
+        "timestamp": "2017-06-06T23:19:05.712848Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712864Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.219719,
+        "pressure": 29.212544,
+        "humidity": 12.743505,
+        "ambient_light": 90.093879,
+        "timestamp": "2017-06-06T23:19:05.712870Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712885Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 91.762219,
+        "pressure": 27.994249,
+        "humidity": 44.747532,
+        "ambient_light": 89.847905,
+        "timestamp": "2017-06-06T23:19:05.712897Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712914Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.519498,
+        "pressure": 28.367472,
+        "humidity": 27.862486,
+        "ambient_light": 80.743238,
+        "timestamp": "2017-06-06T23:19:05.712921Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712936Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.824694,
+        "pressure": 29.733496,
+        "humidity": 31.367981,
+        "ambient_light": 81.289309,
+        "timestamp": "2017-06-06T23:19:05.712942Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712958Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.362450,
+        "pressure": 29.861382,
+        "humidity": 82.180042,
+        "ambient_light": 78.507866,
+        "timestamp": "2017-06-06T23:19:05.712964Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.712979Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.671370,
+        "pressure": 29.231971,
+        "humidity": 34.613128,
+        "ambient_light": 93.881102,
+        "timestamp": "2017-06-06T23:19:05.712985Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713001Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.409395,
+        "pressure": 27.850221,
+        "humidity": 11.105537,
+        "ambient_light": 81.566029,
+        "timestamp": "2017-06-06T23:19:05.713007Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713022Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.827359,
+        "pressure": 30.063388,
+        "humidity": 85.126023,
+        "ambient_light": 88.728665,
+        "timestamp": "2017-06-06T23:19:05.713028Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713043Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.541971,
+        "pressure": 28.333398,
+        "humidity": 88.321203,
+        "ambient_light": 76.861513,
+        "timestamp": "2017-06-06T23:19:05.713049Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713064Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 93.683875,
+        "pressure": 27.952360,
+        "humidity": 85.641867,
+        "ambient_light": 84.567433,
+        "timestamp": "2017-06-06T23:19:05.713075Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713093Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.317116,
+        "pressure": 27.893729,
+        "humidity": 51.668881,
+        "ambient_light": 84.026416,
+        "timestamp": "2017-06-06T23:19:05.713100Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713115Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.547038,
+        "pressure": 28.705066,
+        "humidity": 19.688993,
+        "ambient_light": 82.549159,
+        "timestamp": "2017-06-06T23:19:05.713121Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713137Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.970218,
+        "pressure": 29.862377,
+        "humidity": 15.590199,
+        "ambient_light": 89.526250,
+        "timestamp": "2017-06-06T23:19:05.713143Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713158Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.602885,
+        "pressure": 27.828999,
+        "humidity": 47.974229,
+        "ambient_light": 79.048562,
+        "timestamp": "2017-06-06T23:19:05.713164Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713179Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.309237,
+        "pressure": 28.704002,
+        "humidity": 58.553070,
+        "ambient_light": 93.492185,
+        "timestamp": "2017-06-06T23:19:05.713185Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713200Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 99.723707,
+        "pressure": 28.795546,
+        "humidity": 75.853790,
+        "ambient_light": 91.013626,
+        "timestamp": "2017-06-06T23:19:05.713206Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713221Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.130739,
+        "pressure": 28.990666,
+        "humidity": 10.421869,
+        "ambient_light": 83.806356,
+        "timestamp": "2017-06-06T23:19:05.713227Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713243Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.262662,
+        "pressure": 28.161339,
+        "humidity": 79.877779,
+        "ambient_light": 84.084480,
+        "timestamp": "2017-06-06T23:19:05.713253Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713270Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 109.676275,
+        "pressure": 28.796045,
+        "humidity": 65.009207,
+        "ambient_light": 94.077353,
+        "timestamp": "2017-06-06T23:19:05.713277Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713292Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.337557,
+        "pressure": 28.462771,
+        "humidity": 28.571955,
+        "ambient_light": 83.291388,
+        "timestamp": "2017-06-06T23:19:05.713299Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713314Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.908326,
+        "pressure": 29.971520,
+        "humidity": 38.813117,
+        "ambient_light": 84.818950,
+        "timestamp": "2017-06-06T23:19:05.713320Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713335Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.921158,
+        "pressure": 28.179110,
+        "humidity": 20.604386,
+        "ambient_light": 79.926568,
+        "timestamp": "2017-06-06T23:19:05.713341Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713356Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.649692,
+        "pressure": 29.258449,
+        "humidity": 66.004842,
+        "ambient_light": 84.530107,
+        "timestamp": "2017-06-06T23:19:05.713362Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713377Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 98.143653,
+        "pressure": 29.569960,
+        "humidity": 39.468707,
+        "ambient_light": 91.672613,
+        "timestamp": "2017-06-06T23:19:05.713384Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713399Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.441392,
+        "pressure": 28.708849,
+        "humidity": 27.190268,
+        "ambient_light": 82.776038,
+        "timestamp": "2017-06-06T23:19:05.713405Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713420Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 93.487166,
+        "pressure": 28.296532,
+        "humidity": 31.044973,
+        "ambient_light": 94.602263,
+        "timestamp": "2017-06-06T23:19:05.713431Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456782B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713447Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.201842,
+        "pressure": 28.428643,
+        "humidity": 63.486127,
+        "ambient_light": 91.715268,
+        "timestamp": "2017-06-06T23:19:05.713454Z",
+        "latitude": 34.229192,
+        "longitude": -123.502026,
+        "altitude": 29.447651
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713469Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.773057,
+        "pressure": 29.816441,
+        "humidity": 11.912096,
+        "ambient_light": 96.573303,
+        "timestamp": "2017-06-06T23:19:05.713476Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713491Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 91.837000,
+        "pressure": 29.207846,
+        "humidity": 30.195542,
+        "ambient_light": 83.538445,
+        "timestamp": "2017-06-06T23:19:05.713497Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713512Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.175628,
+        "pressure": 29.929296,
+        "humidity": 74.817520,
+        "ambient_light": 81.356774,
+        "timestamp": "2017-06-06T23:19:05.713529Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713547Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.192128,
+        "pressure": 29.934684,
+        "humidity": 85.135561,
+        "ambient_light": 92.908823,
+        "timestamp": "2017-06-06T23:19:05.713555Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713570Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 97.195240,
+        "pressure": 29.539011,
+        "humidity": 61.080342,
+        "ambient_light": 83.122349,
+        "timestamp": "2017-06-06T23:19:05.713577Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713592Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 99.731399,
+        "pressure": 28.839380,
+        "humidity": 23.195354,
+        "ambient_light": 87.877919,
+        "timestamp": "2017-06-06T23:19:05.713599Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713625Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 105.922709,
+        "pressure": 29.211749,
+        "humidity": 19.394810,
+        "ambient_light": 96.598003,
+        "timestamp": "2017-06-06T23:19:05.713646Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713665Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.567869,
+        "pressure": 29.006300,
+        "humidity": 69.821068,
+        "ambient_light": 88.997091,
+        "timestamp": "2017-06-06T23:19:05.713672Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713688Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 106.349370,
+        "pressure": 29.664924,
+        "humidity": 80.038696,
+        "ambient_light": 92.280553,
+        "timestamp": "2017-06-06T23:19:05.713694Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713709Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 91.826023,
+        "pressure": 28.285513,
+        "humidity": 41.334281,
+        "ambient_light": 81.102796,
+        "timestamp": "2017-06-06T23:19:05.713715Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713730Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.568280,
+        "pressure": 29.099081,
+        "humidity": 83.120732,
+        "ambient_light": 87.580174,
+        "timestamp": "2017-06-06T23:19:05.713736Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713751Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 95.713336,
+        "pressure": 28.856577,
+        "humidity": 21.815929,
+        "ambient_light": 91.376742,
+        "timestamp": "2017-06-06T23:19:05.713758Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713773Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.043107,
+        "pressure": 28.183317,
+        "humidity": 42.634278,
+        "ambient_light": 81.258809,
+        "timestamp": "2017-06-06T23:19:05.713779Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456788B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713793Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 94.710377,
+        "pressure": 29.996935,
+        "humidity": 36.229488,
+        "ambient_light": 82.670349,
+        "timestamp": "2017-06-06T23:19:05.713800Z",
+        "latitude": 36.123606,
+        "longitude": -123.333748,
+        "altitude": 8.937577
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713814Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 96.157527,
+        "pressure": 28.516444,
+        "humidity": 86.096301,
+        "ambient_light": 83.979853,
+        "timestamp": "2017-06-06T23:19:05.713825Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713842Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.859270,
+        "pressure": 29.824863,
+        "humidity": 72.044147,
+        "ambient_light": 78.612991,
+        "timestamp": "2017-06-06T23:19:05.713849Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713864Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 108.429720,
+        "pressure": 29.548225,
+        "humidity": 18.828560,
+        "ambient_light": 88.316406,
+        "timestamp": "2017-06-06T23:19:05.713870Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456786B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713885Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 106.591781,
+        "pressure": 28.078719,
+        "humidity": 15.920176,
+        "ambient_light": 94.990306,
+        "timestamp": "2017-06-06T23:19:05.713891Z",
+        "latitude": 41.135943,
+        "longitude": -125.371083,
+        "altitude": 23.655251
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713906Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.116164,
+        "pressure": 28.823023,
+        "humidity": 39.219346,
+        "ambient_light": 96.744075,
+        "timestamp": "2017-06-06T23:19:05.713912Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456780B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713926Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 100.764901,
+        "pressure": 30.001670,
+        "humidity": 64.425411,
+        "ambient_light": 80.639365,
+        "timestamp": "2017-06-06T23:19:05.713932Z",
+        "latitude": 38.722104,
+        "longitude": -121.680731,
+        "altitude": 39.720161
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456787B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713947Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.061303,
+        "pressure": 29.356976,
+        "humidity": 38.922312,
+        "ambient_light": 81.604122,
+        "timestamp": "2017-06-06T23:19:05.713953Z",
+        "latitude": 41.672958,
+        "longitude": -119.709380,
+        "altitude": 51.372386
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456781B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713968Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 99.496248,
+        "pressure": 29.169493,
+        "humidity": 82.983962,
+        "ambient_light": 96.478564,
+        "timestamp": "2017-06-06T23:19:05.713974Z",
+        "latitude": 33.377291,
+        "longitude": -123.336690,
+        "altitude": 55.506923
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.713988Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 92.345721,
+        "pressure": 28.651731,
+        "humidity": 38.283108,
+        "ambient_light": 91.409118,
+        "timestamp": "2017-06-06T23:19:05.713998Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456785B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.714015Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 102.045512,
+        "pressure": 29.695886,
+        "humidity": 35.205266,
+        "ambient_light": 92.113341,
+        "timestamp": "2017-06-06T23:19:05.714022Z",
+        "latitude": 38.728613,
+        "longitude": -125.845130,
+        "altitude": 67.646825
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456783B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.714037Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 101.033163,
+        "pressure": 28.672140,
+        "humidity": 40.103759,
+        "ambient_light": 78.768991,
+        "timestamp": "2017-06-06T23:19:05.714043Z",
+        "latitude": 37.160159,
+        "longitude": -121.624324,
+        "altitude": 12.355592
+     }
+   }
+},
+{
+  "guid": "0-ZZZ123456784B",
+  "destination": "0-AAA12345678", 
+  "eventTime": "2017-06-06T19:19:05.714070Z", 
+  "payload": {
+     "reply_to": "",
+     "format": "urn:com:azuresults:x42ws:sensors", 
+     "data": {
+        "temperature": 110.681583,
+        "pressure": 29.504776,
+        "humidity": 46.556337,
+        "ambient_light": 76.956881,
+        "timestamp": "2017-06-06T23:19:05.714076Z",
+        "latitude": 41.440905,
+        "longitude": -119.752591,
+        "altitude": 37.516273
+     }
+   }
+}
+]
