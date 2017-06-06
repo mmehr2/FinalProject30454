@@ -44,6 +44,7 @@ iotmsg_eventTime = """\
 
 iotmsg_payload ="""\
   "payload": {
+     "reply-to": "",
      "format": "%s", """
 
 iotmsg_data ="""\
@@ -78,6 +79,20 @@ iotmsg_data2 ="""\
         "humidity": %f,
         "ambient_light": %f,
         "timestamp": "%sZ"
+     }
+   }
+}"""
+
+iotmsg_data3 ="""\
+     "data": {
+        "temperature": %f,
+        "pressure": %f,
+        "humidity": %f,
+        "ambient_light": %f,
+        "timestamp": "%sZ",
+        "latitude": %f,
+        "longitude": %f,
+        "altitude": %f
      }
    }
 }"""
@@ -179,6 +194,19 @@ def rebias_sample(data, biasType, bias):
     L += bias
   return (T, P, H, L, ts)
 
+positions = {}
+base_lat = 37.255
+base_lon = -122.36
+base_alt = 30.0
+def get_position(device):
+  if device not in positions:
+    positions[device] = {
+      "latitude": base_lat + random.uniform(-5.0, 5.0),
+      "longitude": base_lon + random.uniform(-5.0, 5.0),
+      "altitude": base_alt + random.uniform(-25.0, 50.0),
+      }
+  return positions[device]
+
 def gen_samples(numMsgs, biasType, bias):
   print "["
 
@@ -186,8 +214,9 @@ def gen_samples(numMsgs, biasType, bias):
   for counter in range(0, numMsgs):
 
     randInt = random.randrange(0, 9)
-    randLetter = random.choice(letters)
-    print iotmsg_header % (guidStr+str(randInt)+randLetter, destinationStr)
+    randLetter = 'B' # random.choice(letters)
+    guid = guidStr + str(randInt) + randLetter # choice among 10 random devices
+    print iotmsg_header % (guid, destinationStr)
 
     today = datetime.datetime.today() # local time version
     datestr = today.isoformat()
@@ -209,9 +238,13 @@ def gen_samples(numMsgs, biasType, bias):
     ts = sampleTime.isoformat()
     X = X + (ts,)
     X = rebias_sample(X, biasType, bias)
+    # add simulated GPS position of device
+    pos = get_position(guid)
+    Y = (pos["latitude"], pos["longitude"], pos["altitude"])
+    X = X + Y
     if counter == (numMsgs - 1):
       dataElementDelimiter = ""
-    print (iotmsg_data2 % X) + dataElementDelimiter
+    print (iotmsg_data3 % X) + dataElementDelimiter
 
   print "]"
 
