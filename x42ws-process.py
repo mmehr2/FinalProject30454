@@ -80,7 +80,12 @@ if __name__ == "__main__":
     lightK = 0.0
     lightN = 0
     mTracker = None
-    alarm = {"TEMPERATURE": 0, "PRESSURE": 0, "HUMIDITY": 0, "LIGHT": 0} # States: 0=off, 1=on, 2=chg to off, 3=chg to on
+    # WARNING STATES  -1: low warning, +1: high warning, 0: ok, 2: turning off
+    warnStateTemp = 0
+    warnStatePress = 0
+    warnStateHumid = 0
+    warnStateLight = 0
+    alarm = 0 # States: 0=off, 1=on, 2=chg to off, 3=chg to on
 
     print("Restoring statistics here, if any ...")
 
@@ -190,51 +195,104 @@ if __name__ == "__main__":
             add_light(x.ambient_light)
 
     def showerr(guid, typestr, val, thrL, thrH):
-        global alarm
-        old_alarm = alarm[typestr]
+        global sensorStates
+        old_state = get_sensor_states()[typestr]
+        new_state = old_state
         if val > thrH:
             print("****************************************")
             print("**** DEVICE", guid, typestr, val, "is over upper threshold", thrH)
             print("****************************************")
-            new_alarm = True
+            new_state = 1
         elif val < thrL:
             print("****************************************")
             print("**** DEVICE", guid, typestr, val, "is under lower threshold", thrL)
             print("****************************************")
-            new_alarm = True
+            new_state = -1
         else:
-            new_alarm = False
-            if old_alarm == 2:
+            if old_state != 0:
+                new_state = 2 #transitioning to off
                 print("****************************************")
                 print("**** DEVICE", guid, typestr, val, "is back in range.")
                 print("****************************************")
-        if new_alarm:
+            elif old_state == 2:
+                new_state = 0
+        set_sensor_states(typestr, new_state)
+
+    def get_sensor_states():
+        global warnStateTemp, warnStatePress, warnStateHumid, warnStateLight
+        return { "TEMPERATURE": warnStateTemp,
+                 "PRESSURE": warnStatePress,
+                 "HUMIDITY": warnStateHumid,
+                 "LIGHT": warnStateLight }
+
+    def set_sensor_states(typestr, new_state):
+        global warnStateTemp, warnStatePress, warnStateHumid, warnStateLight
+        if typestr == "TEMPERATURE":
+            warnStateTemp = new_state
+        if typestr == "PRESSURE":
+            warnStatePress = new_state
+        if typestr == "HUMIDITY":
+            warnStateHumid = new_state
+        if typestr == "LIGHT":
+            warnStateLight = new_state
+
+    def calc_alarm_type():
+        '''If any sensor warning state is 1 or -1, we are in alarm state, return True, else False. '''
+        global warnStateTemp, warnStatePress, warnStateHumid, warnStateLight
+        if warnStateTemp == -1 or warnStateTemp == 1:
+            return "TEMPERATURE"
+        if warnStatePress == -1 or warnStatePress == 1:
+            return "PRESSURE"
+        if warnStateHumid == -1 or warnStateHumid == 1:
+            return "HUMIDITY"
+        if warnStateLight == -1 or warnStateLight == 1:
+            return "LIGHT"
+        return ""
+
+    def trigger_alarm():
+        global alarm
+        old_alarm = alarm
+        new_alarm = old_alarm
+        typestr = calc_alarm_type()
+        state_alarm = (typestr != "")
+        do_send = False
+        if state_alarm:
             if old_alarm == 0:
-                alarm[typestr] = 3 #setting ON
-                trigger_alarm(typestr)
+                new_alarm = 3 #setting ON
+                do_send = True
             elif old_alarm == 1:
                 pass # staying ON
             elif old_alarm == 2:
                 pass #changed mind??
             elif old_alarm == 3:
-                trigger_alarm(typestr) # still trying to set ON
+                do_send = True # still trying to set ON
         else:
             if old_alarm == 0:
                 pass # staying OFF
             elif old_alarm == 1:
-                alarm[typestr] = 2 #setting OFF
-                trigger_alarm(typestr)
+                new_alarm = 2 #setting OFF
+                do_send = True
             elif old_alarm == 2:
-                trigger_alarm(typestr) # still trying to set OFF
+                do_send = True # still trying to set OFF
             elif old_alarm == 3:
                 pass # changed mind??
+        alarm = new_alarm
+        if do_send:
+            send_alarm(typestr)
 
-    def trigger_alarm(typestr):
+    def send_alarm(typestr):
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         global alarm
-        state = alarm[typestr]
+        state = alarm
         if state < 2:
             return
-        url = "https://893639c5.ngrok.io/weather/api/led/0/" #  From email: REST API Server:    https://893639c5.ngrok.io/weather/api
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print("################################")
+        print("################################")
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        url = "https://893639c5.ngrok.io/weather/api" #  From reply-to field:    https://893639c5.ngrok.io/weather/api
+        url += "/led/0/"
         if state == 2:
             code = "0"
             setting = 0
@@ -242,10 +300,17 @@ if __name__ == "__main__":
             code = "1"
             setting = 1
         url += code
-        r = requests.post(url)
+        data = { "warning": typestr }
+        r = requests.post(url, json=data)
         if r.status_code == 200:
             print("Successfully set the alarm on reference device to %s." % code)
-            alarm[typestr] = setting
+            alarm = setting
+            #reply = r.json()
+            #if reply.status < 0:
+            #    print("Sent alarm %s with error reply: %s", (code, reply.message))
+            #else:
+            #    print("Successfully set the alarm on reference device to %s." % code)
+            #    alarm = setting
         else:
             print("Unable to set alarm on reference device to %s due to error." % code)
 
@@ -325,6 +390,7 @@ if __name__ == "__main__":
                 showerr(x.guid, "PRESSURE", x.pressure, pressThreshLow, pressThreshHigh)
                 showerr(x.guid, "HUMIDITY", x.humidity, humidThreshLow, humidThreshHigh)
                 showerr(x.guid, "LIGHT", x.ambient_light, lightThreshLow, lightThreshHigh)
+            trigger_alarm()
             
             # Clean-up
 	    sqlContext.dropTempTable("iotmsgsTable")
@@ -332,6 +398,8 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             print("Persisting stats data 3...") # prob.needs transaction semantics to avoid partial saves tho
         except Exception as e:
+            if str(e) != "Can not reduce() empty RDD":
+                raise
             print("Processing exception: %s" % e)
         #finally:
             # Track memory leaks
